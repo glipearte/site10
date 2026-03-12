@@ -1,0 +1,575 @@
+/* Responsive CSS - Additional Breakpoints and Adjustments */
+
+/* Large Desktops (1400px and up) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    .hero-title {
+        font-size: 4rem;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+    
+    .produtos-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .servicos-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Medium Desktops (1200px - 1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .container {
+        max-width: 1140px;
+    }
+    
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .produtos-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .servicos-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Small Desktops (1024px - 1199px) */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .produtos-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .servicos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablets Landscape (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .navbar {
+        padding: var(--spacing-sm) 0;
+    }
+    
+    .nav-menu {
+        gap: var(--spacing-md);
+    }
+    
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 140px;
+        min-height: auto;
+        padding-bottom: var(--spacing-xxl);
+    }
+    
+    .hero-content,
+    .hero-image {
+        width: 100%;
+    }
+    
+    .hero-title {
+        font-size: 2.8rem;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .hero-subtitle {
+        font-size: 1.3rem;
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .hero-img {
+        max-width: 70%;
+        margin-top: var(--spacing-lg);
+    }
+    
+    .sobre-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .sobre-image {
+        order: -1;
+        text-align: center;
+    }
+    
+    .sobre-image img {
+        max-width: 80%;
+        display: inline-block;
+    }
+    
+    .sobre-features {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-md);
+    }
+    
+    .produtos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+    
+    .servicos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+    
+    .contato-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .contato-info {
+        order: -1;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-xl);
+    }
+    
+    .footer-brand {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+}
+
+/* Tablets Portrait (600px - 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+    .container {
+        max-width: 540px;
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .navbar {
+        padding: var(--spacing-sm) 0;
+    }
+    
+    .brand-name {
+        font-size: 1.5rem;
+    }
+    
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .hero {
+        padding-top: 120px;
+        min-height: auto;
+        padding-bottom: var(--spacing-xxl);
+    }
+    
+    .hero-title {
+        font-size: 2.3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    .sobre-features {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+    
+    .produtos-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .servicos-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .contato-form {
+        padding: var(--spacing-lg);
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: var(--spacing-xl);
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* Large Mobile Phones (480px - 599px) */
+@media (min-width: 480px) and (max-width: 599px) {
+    .container {
+        max-width: 100%;
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .navbar {
+        padding: var(--spacing-xs) 0;
+    }
+    
+    .nav-brand {
+        gap: var(--spacing-xs);
+    }
+    
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .brand-name {
+        font-size: 1.4rem;
+    }
+    
+    .hero {
+        padding-top: 100px;
+        min-height: auto;
+        padding-bottom: var(--spacing-xl);
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.7rem;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .section-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    section {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .sobre-features {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .produtos-grid,
+    .servicos-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .contato-form {
+        padding: var(--spacing-lg);
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+    
+    .btn-enviar {
+        padding: 12px;
+        font-size: 1rem;
+    }
+    
+    .footer-content {
+        gap: var(--spacing-lg);
+    }
+    
+    .footer-bottom {
+        padding-top: var(--spacing-md);
+    }
+}
+
+/* Small Mobile Phones (320px - 479px) */
+@media (min-width: 320px) and (max-width: 479px) {
+    :root {
+        --spacing-xs: 0.3rem;
+        --spacing-sm: 0.7rem;
+        --spacing-md: 1rem;
+        --spacing-lg: 1.5rem;
+        --spacing-xl: 2rem;
+        --spacing-xxl: 2.5rem;
+    }
+    
+    .container {
+        padding: 0 var(--spacing-xs);
+    }
+    
+    .navbar {
+        padding: var(--spacing-xs) 0;
+    }
+    
+    .nav-brand {
+        gap: var(--spacing-xs);
+    }
+    
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .brand-name {
+        font-size: 1.2rem;
+    }
+    
+    .nav-toggle span {
+        width: 20px;
+        height: 2px;
+        margin: 2px 0;
+    }
+    
+    .hero {
+        padding-top: 90px;
+        min-height: auto;
+        padding-bottom: var(--spacing-xl);
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    .section-subtitle {
+        font-size: 0.85rem;
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .sobre-text p {
+        font-size: 0.9rem;
+    }
+    
+    .feature {
+        padding: var(--spacing-sm);
+        font-size: 0.9rem;
+    }
+    
+    .feature i {
+        font-size: 1.2rem;
+    }
+    
+    .produto-info h3 {
+        font-size: 1.3rem;
+    }
+    
+    .produto-info p {
+        font-size: 0.9rem;
+    }
+    
+    .servico-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .servico-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .servico-card p {
+        font-size: 0.9rem;
+    }
+    
+    .info-item {
+        padding: var(--spacing-sm);
+    }
+    
+    .info-item i {
+        font-size: 1.2rem;
+        min-width: 25px;
+    }
+    
+    .info-item h3 {
+        font-size: 1rem;
+    }
+    
+    .info-item p {
+        font-size: 0.85rem;
+    }
+    
+    .contato-form {
+        padding: var(--spacing-md);
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .btn-enviar {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 15% auto;
+        padding: var(--spacing-md);
+    }
+    
+    .close {
+        font-size: 1.5rem;
+        top: var(--spacing-sm);
+        right: var(--spacing-sm);
+    }
+    
+    .footer-content {
+        gap: var(--spacing-lg);
+    }
+    
+    .footer h3 {
+        font-size: 1.1rem;
+    }
+    
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Extra Small Devices (Below 320px) */
+@media (max-width: 319px) {
+    .container {
+        padding: 0 0.5rem;
+    }
+    
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.8rem;
+    }
+    
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+    
+    .modal-content {
+        width: 98%;
+        margin: 20% auto;
+        padding: var(--spacing-sm);
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo,
+    .hero-img,
+    .sobre-image img,
+    .produto-image img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --light-color: #1a1a1a;
+        --white: #2d2d2d;
+        --text-dark: #ffffff;
+        --text-light: #cccccc;
+    }
+    
+    .header {
+        background: #2d2d2d;
+    }
+    
+    .produto-card,
+    .servico-card,
+    .contato-form,
+    .info-item {
+        background: #2d2d2d;
+        color: #ffffff;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        background: #3d3d3d;
+        color: #ffffff;
+        border-color: #555;
+    }
+    
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+        color: #999;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .hero-img {
+        animation: none;
+    }
+}
